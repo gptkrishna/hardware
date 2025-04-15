@@ -1,0 +1,177 @@
+int S = 0;
+
+void setup()
+{
+  pinMode(A5, INPUT);
+  Serial.begin(9600);
+  pinMode(13, OUTPUT);
+  pinMode(12, OUTPUT);
+  pinMode(11, OUTPUT);
+  pinMode(10, OUTPUT);
+  pinMode(9, OUTPUT);
+  pinMode(8, OUTPUT);
+  pinMode(7, OUTPUT);
+  pinMode(6, OUTPUT);
+  pinMode(5, OUTPUT);
+  pinMode(4, OUTPUT);
+}
+
+void loop()
+{
+  S = analogRead(A5);
+  Serial.println(S);
+  if (S <= 20) 
+  {
+      digitalWrite(13,LOW);
+      digitalWrite(12,LOW);
+      digitalWrite(11,LOW);
+      digitalWrite(10,LOW); 
+      digitalWrite(9,LOW);
+      digitalWrite(8,LOW);
+      digitalWrite(7,LOW);
+      digitalWrite(6,LOW);
+      digitalWrite(5,LOW); 
+      digitalWrite(4,LOW);}
+  else{       
+    if(S>20 && S<25){
+      digitalWrite(13,HIGH);
+      digitalWrite(12,LOW);
+      digitalWrite(11,LOW);
+      digitalWrite(10,LOW); 
+      digitalWrite(9,LOW);
+      digitalWrite(8,LOW);
+      digitalWrite(7,LOW);
+      digitalWrite(6,LOW);
+      digitalWrite(5,LOW); 
+      digitalWrite(4,LOW);
+  }
+  else{
+      if (S > 25 && S <= 30) {
+      digitalWrite(13, HIGH);
+      digitalWrite(12, HIGH);
+      digitalWrite(11,LOW);
+      digitalWrite(10,LOW); 
+      digitalWrite(9,LOW);
+      digitalWrite(8,LOW);
+      digitalWrite(7,LOW);
+      digitalWrite(6,LOW);
+      digitalWrite(5,LOW); 
+      digitalWrite(4,LOW);}
+   else{
+      if (S > 30 && S <= 40) {
+      digitalWrite(13, HIGH);
+      digitalWrite(12, HIGH);
+      digitalWrite(11, HIGH);
+      digitalWrite(10,LOW); 
+      digitalWrite(9,LOW);
+      digitalWrite(8,LOW);
+      digitalWrite(7,LOW);
+      digitalWrite(6,LOW);
+      digitalWrite(5,LOW); 
+      digitalWrite(4,LOW);}
+   else{
+      if (S > 40 && S <= 50){
+      digitalWrite(13, HIGH);
+      digitalWrite(12, HIGH);
+      digitalWrite(11, HIGH);
+      digitalWrite(10, HIGH);
+      digitalWrite(9,LOW);
+      digitalWrite(8,LOW);
+      digitalWrite(7,LOW);
+      digitalWrite(6,LOW);
+      digitalWrite(5,LOW); 
+      digitalWrite(4,LOW);} 
+   else{
+      if (S >50 && S <= 60){
+      digitalWrite(13, HIGH);
+      digitalWrite(12, HIGH);
+      digitalWrite(11, HIGH);
+      digitalWrite(10, HIGH); 
+      digitalWrite(9, HIGH);
+      digitalWrite(8,LOW);
+      digitalWrite(7,LOW);
+      digitalWrite(6,LOW);
+      digitalWrite(5,LOW); 
+      digitalWrite(4,LOW);}
+   else{
+      if (S >60 && S <= 70){
+      digitalWrite(13, HIGH);
+      digitalWrite(12, HIGH);
+      digitalWrite(11, HIGH);
+      digitalWrite(10, HIGH); 
+      digitalWrite(9, HIGH);
+      digitalWrite(8,HIGH);
+      digitalWrite(7,LOW);
+      digitalWrite(6,LOW);
+      digitalWrite(5,LOW); 
+      digitalWrite(4,LOW);}
+   else{
+      if (S >70 && S <= 80){
+      digitalWrite(13,HIGH);
+      digitalWrite(12,HIGH);
+      digitalWrite(11,HIGH);
+      digitalWrite(10,HIGH); 
+      digitalWrite(9,HIGH);
+      digitalWrite(8,HIGH);
+      digitalWrite(7,HIGH);
+      digitalWrite(6,LOW);
+      digitalWrite(5,LOW); 
+      digitalWrite(4,LOW);}
+   else{
+      if (S >80 && S <= 90){
+      digitalWrite(13,HIGH);
+      digitalWrite(12,HIGH);
+      digitalWrite(11,HIGH);
+      digitalWrite(10,HIGH); 
+      digitalWrite(9,HIGH);
+      digitalWrite(8,HIGH);
+      digitalWrite(7,HIGH);
+      digitalWrite(6,HIGH);
+      digitalWrite(5,LOW); 
+      digitalWrite(4,LOW);}
+  else{
+      if (S >90 && S <= 100){
+      digitalWrite(13,HIGH);
+      digitalWrite(12,HIGH);
+      digitalWrite(11,HIGH);
+      digitalWrite(10,HIGH); 
+      digitalWrite(9,HIGH);
+      digitalWrite(8,HIGH);
+      digitalWrite(7,HIGH);
+      digitalWrite(6,HIGH);
+      digitalWrite(5,HIGH); 
+      digitalWrite(4,LOW);}
+   else {
+      if(S>100){
+      digitalWrite(13,HIGH);
+      digitalWrite(12,HIGH);
+      digitalWrite(11,HIGH);
+      digitalWrite(10,HIGH); 
+      digitalWrite(9,HIGH);
+      digitalWrite(8,HIGH);
+      digitalWrite(7,HIGH);
+      digitalWrite(6,HIGH);
+      digitalWrite(5,HIGH); 
+      digitalWrite(4,HIGH);}
+  else{
+      digitalWrite(13,LOW);
+      digitalWrite(12,LOW);
+      digitalWrite(11,LOW);
+      digitalWrite(10,LOW); 
+      digitalWrite(9,LOW);
+      digitalWrite(8,LOW);
+      digitalWrite(7,LOW);
+      digitalWrite(6,LOW);
+      digitalWrite(5,LOW); 
+      digitalWrite(4,LOW);}
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   }
+  }  delay(10); // Delay a little bit to improve simulation performance
+}
